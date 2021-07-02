@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Formulaire de recherche</h2>
+  <form method="GET" action="https://www.google.com/search">
+    <input type="text" name="q" placeholder="Saisi ta recherche">
+    <button>Recherche</button>
+  </form>
+
+  <h2>Formulaire pour publier (inscription, commentaire)</h2>
+  <form method="POST" action="/inscription" enctype="multipart/form-data">
+    <h3>Description</h3>
+    <textarea name="description" rows="10">Valeur préremplie</textarea>
+    <h3>Photo</h3>
+    <input type="file" name="photo">
+    <h3>Loisirs</h3>
+    <div>
+      <label><input type="checkbox"> Musique</label>
+      <input type="checkbox" id="sports" checked> <label for="sports">Sports</label>
+    </div>
+    <div>
+      Genre
+      <select>
+        <option>Homme</option>
+        <option selected>Femme</option>
+        <option>Non Genré</option>
+      </select>
+    </div>
+  </form>
+
+  <h2>Login</h2>
+
+  <h2>Confirmation</h2>
+  <form method="POST" action="/page-java">
+    <p>Voulez vous valider votre action ?</p>
+    <button name="reponse" value="oui">Oui</button>
+    <button name="reponse" value="non">Non</button>
+  </form>
+</body>
+</html>
