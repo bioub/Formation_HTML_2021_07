@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- table>tbody>tr*3>td*4>lorem1 -->
+  <table>
+    <tbody>
+      <tr>
+        <td>L1 C1</td>
+        <td>L1 C2</td>
+        <td>L1 C3</td>
+        <td>L1 C4</td>
+      </tr>
+      <tr>
+        <td>L2 C1</td>
+        <td>L2 C2</td>
+        <td>L2 C3</td>
+        <td>L2 C4</td>
+      </tr>
+      <tr>
+        <td>L3 C1</td>
+        <td>L3 C2</td>
+        <td>L3 C3</td>
+        <td>L3 C4</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <tbody>
+      <tr>
+        <td>L1 C1</td>
+        <td colspan="2">L1 C2</td>
+        <td rowspan="3">L1 C4</td>
+      </tr>
+      <tr>
+        <td>L2 C1</td>
+        <td>L2 C2</td>
+        <td>L2 C3</td>
+      </tr>
+      <tr>
+        <td>L3 C1</td>
+        <td>L3 C2</td>
+        <td>L3 C3</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
