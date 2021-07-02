@@ -20,7 +20,7 @@
     <input type="file" name="photo">
     <h3>Loisirs</h3>
     <div>
-      <label><input type="checkbox"> Musique</label>
+      <label><input type="checkbox"> <div>Musique</div></label>
       <input type="checkbox" id="sports" checked> <label for="sports">Sports</label>
     </div>
     <div>
@@ -30,6 +30,15 @@
         <option selected>Femme</option>
         <option>Non Genré</option>
       </select>
+    </div>
+    <div>
+      <h3>Inscription à la newsletter</h3>
+      <label>
+        <input type="radio" name="newsletter"> Oui
+      </label>
+      <label>
+        <input type="radio" name="newsletter"> Oui
+      </label>
     </div>
   </form>
 
@@ -41,5 +50,29 @@
     <button name="reponse" value="oui">Oui</button>
     <button name="reponse" value="non">Non</button>
   </form>
+
+  <h2>Exercice</h2>
+  <form action="inscription.php" method="POST">
+    <h3>Nom</h3>
+    <input type="text" name="prenom" placeholder="Prénom">
+    <input type="text" name="nom" placeholder="Nom">
+
+    <h3>Choisissez...</h3>
+    <input type="email" name="email" placeholder="@gmail.com">
+    <div>
+        <a href="">Je préfère...</a>
+    </div>
+
+    <h3>Mot de passe</h3>
+    <input type="password" name="motdepasse">
+
+    <h3>Date de naissance</h3>
+    <input type="number" name="jour">
+    <select>
+        <option>Janvier</option>
+        <option>Février</option>
+    </select>
+    <input type="year" name="jour">
+</form>
 </body>
 </html>
